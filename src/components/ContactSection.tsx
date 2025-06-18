@@ -5,8 +5,8 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const ContactSection = () => {
   return (
-    <section className="py-6 bg-gray-50 rounded-lg">
-      <div className="text-center">
+    <section className="py-8 px-4 bg-gray-50">
+      <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Contact Us</h2>
         <Card className="border-blue-200 bg-white">
           <CardContent className="p-6">
