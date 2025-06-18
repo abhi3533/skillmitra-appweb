@@ -57,7 +57,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <style jsx>{`
+      <style>{`
         .card {
           max-width: 700px;
           width: 90%;
