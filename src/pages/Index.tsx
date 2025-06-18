@@ -60,10 +60,10 @@ const Index = () => {
       <Hero />
       
       {/* About Section */}
-      <section className="py-16 px-4 max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">About SkillMitra</h2>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+      <section className="py-8 px-4 max-w-4xl mx-auto">
+        <div className="text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">About SkillMitra</h2>
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             SkillMitra is a dedicated learning platform built to connect students directly with professional 
             software trainers for personalized 1-on-1 training. Unlike traditional course platforms, 
             SkillMitra focuses entirely on <span className="font-semibold text-blue-600">live, individual sessions</span> — 
@@ -72,11 +72,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Advantages Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Platform Advantages</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Why We're Different Section */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">Why We're Different</h2>
+          <div className="grid md:grid-cols-2 gap-4">
             {advantages.map((advantage, index) => (
               <FeatureCard 
                 key={index}
@@ -86,10 +86,10 @@ const Index = () => {
               />
             ))}
           </div>
-          <div className="mt-8 text-center">
-            <Card className="max-w-2xl mx-auto border-blue-200 bg-blue-50">
-              <CardContent className="p-6">
-                <p className="text-blue-800 font-medium">
+          <div className="mt-6 text-center">
+            <Card className="max-w-xl mx-auto border-blue-200 bg-blue-50">
+              <CardContent className="p-4">
+                <p className="text-blue-800 text-sm font-medium">
                   🔄 Referral program and trainer earnings system integrated<br />
                   🎯 Future phase includes job placement support
                 </p>
@@ -99,21 +99,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Targets Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Targets</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Our Targets Section */}
+      <section className="py-8 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Our Targets</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {targets.map((target, index) => (
-              <div key={index} className={`bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center transition-transform hover:scale-105 ${target.highlight ? 'ring-2 ring-yellow-400' : ''}`}>
-                <target.icon className="h-12 w-12 mx-auto mb-4 text-yellow-300" />
-                <h3 className="font-semibold text-lg mb-2">{target.title}</h3>
-                <p className="text-blue-100">{target.description}</p>
+              <div key={index} className={`bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center transition-transform hover:scale-105 ${target.highlight ? 'ring-2 ring-yellow-400' : ''}`}>
+                <target.icon className="h-10 w-10 mx-auto mb-3 text-yellow-300" />
+                <h3 className="font-semibold text-base mb-2">{target.title}</h3>
+                <p className="text-blue-100 text-sm">{target.description}</p>
               </div>
             ))}
           </div>
-          <div className="mt-8 text-center">
-            <p className="text-blue-100 text-lg">
+          <div className="mt-6 text-center">
+            <p className="text-blue-100 text-base">
               Government partnership for employment-linked skill programs in Phase 2
             </p>
           </div>
@@ -124,15 +124,15 @@ const Index = () => {
       <ContactSection />
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Globe className="h-5 w-5" />
-            <a href="https://skillmitra.online" className="hover:text-blue-400 transition-colors">
+      <footer className="bg-gray-900 text-white py-6 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <Globe className="h-4 w-4" />
+            <a href="https://skillmitra.online" className="hover:text-blue-400 transition-colors text-sm">
               skillmitra.online
             </a>
           </div>
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-sm">
             Platform under development – live soon!
           </p>
         </div>
