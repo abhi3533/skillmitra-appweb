@@ -58,48 +58,38 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <style>{`
-        .main-container {
+        .desktop-layout {
           width: 100%;
           min-height: 100vh;
         }
         
-        .content-wrapper {
-          max-width: 700px;
+        .desktop-content {
+          max-width: 1200px;
           width: 100%;
           margin: 0 auto;
-          padding: 20px;
+          padding: 60px 80px;
         }
         
-        .section {
-          margin: 40px 0;
+        .desktop-section {
+          margin: 60px 0;
         }
         
-        @media (min-width: 768px) {
-          .content-wrapper {
-            padding: 40px;
-          }
-          .section {
-            padding: 0 60px;
-          }
-        }
-        
-        @media (max-width: 767px) {
-          .content-wrapper {
+        @media (max-width: 768px) {
+          .desktop-content {
+            max-width: 100%;
             padding: 20px;
           }
-          .section {
+          .desktop-section {
             margin: 30px 0;
-            padding: 0;
           }
         }
         
         @media (max-width: 480px) {
-          .content-wrapper {
+          .desktop-content {
             padding: 15px;
           }
-          .section {
+          .desktop-section {
             margin: 20px 0;
-            padding: 0;
           }
           h1 {
             font-size: 1.75rem;
@@ -113,15 +103,15 @@ const Index = () => {
         }
       `}</style>
       
-      <div className="main-container">
-        <div className="content-wrapper">
+      <div className="desktop-layout">
+        <div className="desktop-content">
           <Hero />
           
           {/* About Section */}
-          <section className="section">
+          <section className="desktop-section">
             <div className="text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">About SkillMitra</h2>
-              <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
                 SkillMitra is a dedicated learning platform built to connect students directly with professional 
                 software trainers for personalized 1-on-1 training. Unlike traditional course platforms, 
                 SkillMitra focuses entirely on <span className="font-semibold text-blue-600">live, individual sessions</span> — 
@@ -131,10 +121,10 @@ const Index = () => {
           </section>
 
           {/* Why We're Different Section */}
-          <section className="section bg-white rounded-lg p-6">
+          <section className="desktop-section bg-white rounded-lg p-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">Why We're Different</h2>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-6">
                 {advantages.map((advantage, index) => (
                   <FeatureCard 
                     key={index}
@@ -144,10 +134,10 @@ const Index = () => {
                   />
                 ))}
               </div>
-              <div className="mt-6 text-center">
-                <Card className="max-w-xl mx-auto border-blue-200 bg-blue-50">
-                  <CardContent className="p-4">
-                    <p className="text-blue-800 text-sm font-medium">
+              <div className="mt-8 text-center">
+                <Card className="max-w-2xl mx-auto border-blue-200 bg-blue-50">
+                  <CardContent className="p-6">
+                    <p className="text-blue-800 text-base font-medium">
                       🔄 Referral program and trainer earnings system integrated<br />
                       🎯 Future phase includes job placement support
                     </p>
@@ -158,44 +148,44 @@ const Index = () => {
           </section>
 
           {/* Our Targets Section */}
-          <section className="section bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-6">
+          <section className="desktop-section bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Our Targets</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {targets.map((target, index) => (
-                  <div key={index} className={`bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center transition-transform hover:scale-105 ${target.highlight ? 'ring-2 ring-yellow-400' : ''}`}>
-                    <target.icon className="h-10 w-10 mx-auto mb-3 text-yellow-300" />
-                    <h3 className="font-semibold text-base mb-2">{target.title}</h3>
-                    <p className="text-blue-100 text-sm">{target.description}</p>
+                  <div key={index} className={`bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center transition-transform hover:scale-105 ${target.highlight ? 'ring-2 ring-yellow-400' : ''}`}>
+                    <target.icon className="h-12 w-12 mx-auto mb-4 text-yellow-300" />
+                    <h3 className="font-semibold text-lg mb-3">{target.title}</h3>
+                    <p className="text-blue-100 text-base">{target.description}</p>
                   </div>
                 ))}
               </div>
-              <div className="mt-6 text-center">
-                <p className="text-blue-100 text-base">
+              <div className="mt-8 text-center">
+                <p className="text-blue-100 text-lg">
                   Government partnership for employment-linked skill programs in Phase 2
                 </p>
               </div>
             </div>
           </section>
 
-          <div className="section">
+          <div className="desktop-section">
             <HiringSection />
           </div>
           
-          <div className="section">
+          <div className="desktop-section">
             <ContactSection />
           </div>
 
           {/* Footer */}
-          <footer className="section bg-gray-900 text-white py-6 px-4 rounded-lg">
+          <footer className="desktop-section bg-gray-900 text-white py-8 px-6 rounded-lg">
             <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <Globe className="h-4 w-4" />
-                <a href="https://skillmitra.online" className="hover:text-blue-400 transition-colors text-sm">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Globe className="h-5 w-5" />
+                <a href="https://skillmitra.online" className="hover:text-blue-400 transition-colors text-base">
                   skillmitra.online
                 </a>
               </div>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 text-base">
                 Platform under development – live soon!
               </p>
             </div>
