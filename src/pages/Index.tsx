@@ -60,13 +60,19 @@ const Index = () => {
       <style>{`
         .card {
           max-width: 700px;
-          width: 95%;
+          width: 100%;
           margin: 0 auto;
           padding: 40px;
         }
         
         .section {
           margin: 40px 0;
+        }
+        
+        @media (min-width: 768px) {
+          .section {
+            padding: 40px 60px;
+          }
         }
         
         @media (max-width: 768px) {
@@ -76,6 +82,7 @@ const Index = () => {
           }
           .section {
             margin: 30px 0;
+            padding: 0;
           }
         }
         
@@ -86,6 +93,7 @@ const Index = () => {
           }
           .section {
             margin: 20px 0;
+            padding: 0;
           }
           h1 {
             font-size: 1.75rem;
