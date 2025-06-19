@@ -60,13 +60,23 @@ const Index = () => {
       <style>{`
         .card {
           max-width: 700px;
-          width: 90%;
+          width: 95%;
           margin: 0 auto;
-          padding: 20px;
+          padding: 40px;
         }
         
         .section {
-          margin: 30px 0;
+          margin: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+          .card {
+            width: 95%;
+            padding: 20px;
+          }
+          .section {
+            margin: 30px 0;
+          }
         }
         
         @media (max-width: 480px) {
@@ -74,8 +84,14 @@ const Index = () => {
             width: 95%;
             padding: 15px;
           }
+          .section {
+            margin: 20px 0;
+          }
           h1 {
             font-size: 1.75rem;
+          }
+          h2 {
+            font-size: 1.5rem;
           }
           p {
             font-size: 1rem;
