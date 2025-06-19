@@ -57,58 +57,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      <style>{`
-        .desktop-layout {
-          width: 100%;
-          min-height: 100vh;
-        }
-        
-        .desktop-content {
-          max-width: 1200px;
-          width: 100%;
-          margin: 0 auto;
-          padding: 60px 80px;
-        }
-        
-        .desktop-section {
-          margin: 60px 0;
-        }
-        
-        @media (max-width: 768px) {
-          .desktop-content {
-            max-width: 100%;
-            padding: 20px;
-          }
-          .desktop-section {
-            margin: 30px 0;
-          }
-        }
-        
-        @media (max-width: 480px) {
-          .desktop-content {
-            padding: 15px;
-          }
-          .desktop-section {
-            margin: 20px 0;
-          }
-          h1 {
-            font-size: 1.75rem;
-          }
-          h2 {
-            font-size: 1.5rem;
-          }
-          p {
-            font-size: 1rem;
-          }
-        }
-      `}</style>
-      
-      <div className="desktop-layout">
-        <div className="desktop-content">
+      {/* Full width container for desktop, proper mobile padding */}
+      <div className="w-full min-h-screen">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-20 lg:px-24 py-12 md:py-16">
           <Hero />
           
           {/* About Section */}
-          <section className="desktop-section">
+          <section className="my-12 md:my-20">
             <div className="text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">About SkillMitra</h2>
               <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -121,7 +76,7 @@ const Index = () => {
           </section>
 
           {/* Why We're Different Section */}
-          <section className="desktop-section bg-white rounded-lg p-8">
+          <section className="my-12 md:my-20 bg-white rounded-lg p-6 md:p-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">Why We're Different</h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -148,7 +103,7 @@ const Index = () => {
           </section>
 
           {/* Our Targets Section */}
-          <section className="desktop-section bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-8">
+          <section className="my-12 md:my-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-6 md:p-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Our Targets</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -168,16 +123,16 @@ const Index = () => {
             </div>
           </section>
 
-          <div className="desktop-section">
+          <div className="my-12 md:my-20">
             <HiringSection />
           </div>
           
-          <div className="desktop-section">
+          <div className="my-12 md:my-20">
             <ContactSection />
           </div>
 
           {/* Footer */}
-          <footer className="desktop-section bg-gray-900 text-white py-8 px-6 rounded-lg">
+          <footer className="my-12 md:my-20 bg-gray-900 text-white py-8 px-6 rounded-lg">
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <Globe className="h-5 w-5" />
