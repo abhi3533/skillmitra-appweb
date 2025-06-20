@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import FeatureCard from '@/components/FeatureCard';
 import ContactSection from '@/components/ContactSection';
 import HiringSection from '@/components/HiringSection';
+import ChatSupport from '@/components/ChatSupport';
 
 const Index = () => {
   const advantages = [
@@ -147,6 +148,9 @@ const Index = () => {
           </footer>
         </div>
       </div>
+      
+      {/* Chat Support - Fixed positioned, appears on all pages */}
+      <ChatSupport />
     </div>
   );
 };
