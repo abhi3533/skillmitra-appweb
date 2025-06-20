@@ -1,5 +1,5 @@
 
-import { MapPin, Clock, Briefcase, DollarSign, Mail } from 'lucide-react';
+import { MapPin, Clock, Briefcase, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -49,10 +49,7 @@ const HiringSection = () => {
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
                       <h3 className="text-lg font-semibold text-gray-900">{position.title}</h3>
-                      <div className="flex items-center gap-2">
-                        <DollarSign className="h-4 w-4 text-green-600" />
-                        <span className="text-green-700 font-medium text-sm">{position.salary}</span>
-                      </div>
+                      <span className="text-green-700 font-medium text-sm">{position.salary}</span>
                     </div>
                     <p className="text-gray-700 text-sm mb-1">{position.description}</p>
                     {position.details && (
