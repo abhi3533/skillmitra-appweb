@@ -10,7 +10,6 @@ const HiringSection = () => {
       description: "React.js (Web) + Python (FastAPI)",
       details: "Firebase, Razorpay, Jitsi integration",
       salary: "₹15k–₹30k/month",
-      note: "extendable based on performance",
       icon: "💻"
     },
     {
@@ -18,7 +17,6 @@ const HiringSection = () => {
       description: "Figma-based design for mobile & web",
       details: "",
       salary: "₹8k–₹15k/project",
-      note: "2-week role",
       icon: "🎨"
     },
     {
@@ -26,7 +24,6 @@ const HiringSection = () => {
       description: "Manual testing, Mobile & web testing",
       details: "",
       salary: "₹5k–₹8k",
-      note: "2-week part-time",
       icon: "🧪"
     }
   ];
@@ -54,9 +51,6 @@ const HiringSection = () => {
                     <p className="text-gray-700 text-sm md:text-base lg:text-[18px] mb-2 leading-relaxed">{position.description}</p>
                     {position.details && (
                       <p className="text-gray-600 text-xs md:text-sm mb-3 leading-relaxed">{position.details}</p>
-                    )}
-                    {position.note && (
-                      <p className="text-green-600 text-xs md:text-sm font-medium">{position.note}</p>
                     )}
                   </div>
                 </div>
