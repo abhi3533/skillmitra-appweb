@@ -7,7 +7,6 @@ import FeatureCard from '@/components/FeatureCard';
 import ContactSection from '@/components/ContactSection';
 import HiringSection from '@/components/HiringSection';
 import ChatSupport from '@/components/ChatSupport';
-import TechNewsJobsSection from '@/components/TechNewsJobsSection';
 
 const Index = () => {
   const advantages = [
@@ -76,9 +75,6 @@ const Index = () => {
               </p>
             </div>
           </section>
-
-          {/* Tech News & Jobs Section */}
-          <TechNewsJobsSection />
 
           {/* Why We're Different Section */}
           <section className="my-12 md:my-20 bg-white rounded-lg p-6 md:p-12">
