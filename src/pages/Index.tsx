@@ -7,6 +7,7 @@ import FeatureCard from '@/components/FeatureCard';
 import ContactSection from '@/components/ContactSection';
 import HiringSection from '@/components/HiringSection';
 import ChatSupport from '@/components/ChatSupport';
+import TechNewsSection from '@/components/TechNewsSection';
 
 const Index = () => {
   const advantages = [
@@ -62,6 +63,9 @@ const Index = () => {
       <div className="w-full min-h-screen">
         <div className="max-w-[1200px] mx-auto px-4 md:px-20 lg:px-24 py-12 md:py-16">
           <Hero />
+          
+          {/* Tech News Section - Added below Hero */}
+          <TechNewsSection />
           
           {/* About Section */}
           <section className="my-12 md:my-20">
