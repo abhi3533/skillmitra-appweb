@@ -83,7 +83,7 @@ const HiringSection = () => {
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl lg:text-[28px] font-bold text-gray-900 mb-3">🚀 We're Hiring in Karimnagar – Join the SkillMitra Team!</h2>
           <p className="text-green-700 font-medium text-base md:text-[18px] lg:text-[20px] mb-2">
-            SkillMitra is India's first platform where students can choose trainers like they choose food from Swiggy
+            SkillMitra is India's first platform where students can explore and choose expert trainers for personalized 1-on-1 software learning — built for real outcomes, not just certificates.
           </p>
           <p className="text-gray-600 text-sm md:text-base lg:text-[18px] mb-4">
             Building from the heart of Telangana. Join us at our Karimnagar office.
