@@ -1,7 +1,8 @@
 
 import React from 'react';
-import TrainerApplicationForm from './TrainerApplicationForm';
-import StudentInquiryForm from './StudentInquiryForm';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 const ApplicationFormsSection = () => {
   return (
@@ -15,10 +16,39 @@ const ApplicationFormsSection = () => {
       
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <div className="flex justify-center">
-          <TrainerApplicationForm />
+          <Card className="w-full max-w-md">
+            <CardHeader className="text-center">
+              <CardTitle className="text-xl font-bold text-gray-900">📋 Become a Trainer</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-gray-600 mb-6">
+                Share your expertise and earn by teaching students in personalized 1-on-1 sessions.
+              </p>
+              <Link to="/trainer-application">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                  Apply as Trainer
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
         </div>
+        
         <div className="flex justify-center">
-          <StudentInquiryForm />
+          <Card className="w-full max-w-md">
+            <CardHeader className="text-center">
+              <CardTitle className="text-xl font-bold text-gray-900">🎓 Interested in Learning?</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-gray-600 mb-6">
+                Tell us what you want to learn and we'll match you with the perfect trainer.
+              </p>
+              <Link to="/student-inquiry">
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  Start Learning
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
