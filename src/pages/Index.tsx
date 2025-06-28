@@ -59,16 +59,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      {/* Full width container for desktop, proper mobile padding */}
       <div className="w-full min-h-screen">
-        <div className="max-w-[1200px] mx-auto px-4 md:px-20 lg:px-24 py-12 md:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <Hero />
           
           {/* About Section */}
           <section className="my-12 md:my-20">
             <div className="text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">About SkillMitra</h2>
-              <p className="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 max-w-5xl mx-auto leading-relaxed">
                 SkillMitra is a dedicated learning platform built to connect students directly with professional 
                 software trainers for personalized 1-on-1 training. Unlike traditional course platforms, 
                 SkillMitra focuses entirely on <span className="font-semibold text-blue-600">live, individual sessions</span> — 
@@ -81,7 +80,7 @@ const Index = () => {
           <section className="my-12 md:my-20 bg-white rounded-lg p-6 md:p-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">Why We're Different</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {advantages.map((advantage, index) => (
                   <FeatureCard 
                     key={index}
@@ -92,7 +91,7 @@ const Index = () => {
                 ))}
               </div>
               <div className="mt-8 text-center">
-                <Card className="max-w-2xl mx-auto border-blue-200 bg-blue-50">
+                <Card className="max-w-3xl mx-auto border-blue-200 bg-blue-50">
                   <CardContent className="p-6">
                     <p className="text-blue-800 text-base font-medium">
                       🔄 Referral program and trainer earnings system integrated<br />
@@ -108,7 +107,7 @@ const Index = () => {
           <section className="my-12 md:my-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-6 md:p-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Our Targets</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {targets.map((target, index) => (
                   <div key={index} className={`bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center transition-transform hover:scale-105 ${target.highlight ? 'ring-2 ring-yellow-400' : ''}`}>
                     <target.icon className="h-12 w-12 mx-auto mb-4 text-yellow-300" />
@@ -154,7 +153,6 @@ const Index = () => {
         </div>
       </div>
       
-      {/* Chat Support - Fixed positioned, appears on all pages */}
       <ChatSupport />
     </div>
   );
