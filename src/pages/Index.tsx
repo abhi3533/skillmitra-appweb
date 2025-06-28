@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import FeatureCard from '@/components/FeatureCard';
 import ContactSection from '@/components/ContactSection';
 import HiringSection from '@/components/HiringSection';
+import ApplicationFormsSection from '@/components/ApplicationFormsSection';
 import ChatSupport from '@/components/ChatSupport';
 
 const Index = () => {
@@ -123,6 +124,10 @@ const Index = () => {
               </div>
             </div>
           </section>
+
+          <div className="my-12 md:my-20">
+            <ApplicationFormsSection />
+          </div>
 
           <div className="my-12 md:my-20">
             <HiringSection />
