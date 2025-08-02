@@ -37,7 +37,7 @@ const Index = () => {
     {
       icon: Rocket,
       title: "Phase 1 Launch",
-      description: "Aug 2025",
+      description: "Sep 2025",
       highlight: true
     },
     {

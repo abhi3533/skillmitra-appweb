@@ -26,7 +26,7 @@ const Hero = () => {
           {[1, 2, 3, 4, 5].map((star) => (
             <Star key={star} className="h-4 w-4 md:h-5 md:w-5 text-yellow-400 fill-current" />
           ))}
-          <span className="ml-2 text-gray-600 text-sm md:text-base">Launching Aug 2025</span>
+          <span className="ml-2 text-gray-600 text-sm md:text-base">Launching Sep 2025</span>
         </div>
         
         <div className="max-w-4xl mx-auto">
